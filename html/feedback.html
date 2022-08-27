@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Teo Wan Yi Ashley, FED CA1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap links -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+          <!-- Bootstrap CSS -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+          <!-- Bootstrap Icons -->
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+          <!-- Javascripts   Bootstrap -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+          <link href="../css/reset.css" rel="stylesheet" />
+          <link href="../css/styles.css" rel="stylesheet" />
+          
+          <script src="../js/darkModeToggle.js" defer ></script>
+          <script src="../js/tooltips.js" defer></script>
+          <script src="../js/toTop.js" defer></script>
+      
+    <title>DIT/FT/1A/01 Teo Wan Yi, Ashley</title>
+</head>
+
+<body>
+    <!-- bootstrap navbar: https://getbootstrap.com/docs/5.0/components/navbar/ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- navbar logo -->
+          <div class="navbar-brand ps-3" href="#">
+            <!-- dark mode toggle: https://henryegloff.com/how-to-code-a-simple-dark-mode-toggle/ -->
+            <button 
+                class="light-mode-button" 
+                aria-label="Toggle Light Mode" 
+                onclick="toggle_light_mode()">
+                <span></span>
+                <span></span>
+
+            </button> 
+          </div>
+          <!-- navbar button when collapsed -->
+          <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav fs-5">
+              <a class="nav-link px-3" href="../index.html">About Me</a>
+              <a class="nav-link px-3" href="../html/sp.html">Singapore Polytechnic</a>
+              <a class="nav-link px-3" href="../html/career.html">Career</a>
+              <a class="nav-link active px-3" aria-current="page" href="../html/feedback.html">Feedback</a>
+            </div>
+          </div>
+    </nav>
+
+    <!-- Back To Top button. This div acts as the button -->
+    <div id="toTopButton" class="border border-dark d-flex btn btn-info position-fixed text-light" style="opacity: 1; visibility: visible; transition: opacity 200ms ease-in-out 0s;">
+
+      <!-- Resetting the font size using defaultFont class  -->
+      ^<span class="defaultFont"></span>
+    </div>   
+
+    <header>Feedback</header>
+    <form class="row m-4 pt-4">
+      <div class="first-column col-sm-12 col-md-6">
+        <!-- Text input -->
+        <div class="row mb-4">
+          <div class="col">
+            <div class="form-outline">
+              <input class="form-control" type="text" id="validationCustom01" placeholder="John Doe" maxlength="345" autocomplete="off" required="">
+              <label class="form-label" for="validationCustom01">Name</label>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Text input
+        <div class="form-outline mb-4">
+          <input type="text" id="form6Example4" class="form-control" />
+          <label class="form-label" for="form6Example4">Address</label>
+        </div> -->
+      
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input class="form-control" type="email" id="validationCustom02" autocomplete="off" required="" maxlength="345" placeholder="example@gmail.com" pattern="(?:[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*|\u0022(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])">
+          <label class="form-label" for="form6Example5">Email</label>
+        </div>
+
+        <!-- Number input -->
+        <div class="form-outline mb-4">
+          <input type="number" id="form6Example6" class="form-control" />
+          <label class="form-label" for="form6Example6">Phone</label>
+        </div>
+
+        <!-- Rate Slider -->
+        <div class="formRow">
+          <div class="rate">
+              <label for="rateSlider">Do you like this website?</label>
+          </div>
+          <div class="rate">
+              <div class="rateScale">
+                  Strongly Disagree
+              </div>
+              <input name="personalRating" id="rateSlider" type="range" value="3" step="1" min="1" max="5" />
+              <div class="rateScale">
+                  Strongly Agree
+              </div>
+          </div>
+        </div>
+
+        <!-- Text input -->
+        <div class="formRow">
+          <label for="why" class="mb-2">Why/Why not?</label>
+          <textarea name="personalExp" id="why"></textarea>
+        </div>
+
+      
+        <!-- Message input
+        <div class="form-outline mb-4">
+          <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+          <label class="form-label" for="form6Example7">Additional information</label>
+        </div> -->
+      
+        <!-- Checkbox
+        <div class="form-check d-flex justify-content-center mb-4">
+          <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
+          <label class="form-check-label" for="form6Example8"> Create an account? </label>
+        </div> -->
+
+      </div>
+
+      <div class="second-column col-sm-12 col-md-6">
+
+        <!-- Dropdown -->
+        <div class="form-group">
+          <label for="liked">
+            Which part do you like the most?
+          </label>
+
+          <br />
+
+          <select id="liked" class="custom-select my-3">
+            <option value="home">About Me</option>
+            <option value="past">Singapore Polytechnic</option>
+            <option value="present">Career</option>
+          </select>
+        </div>
+
+        <!-- Text input -->
+        <div class="formRow">
+          <label for="why" class="mb-2">Why/Why not?</label>
+          <textarea name="personalExp" id="why"></textarea>
+        </div>
+
+        <!-- Slider input -->
+        <div class="form-group mb-2">
+          <div class="rate">
+            <label class="form-label" for="recommend">
+              How likely are you to recommend my site to other people?<br>
+            </label>
+          </div>
+          <div class="rate">
+            <div class="recommendScale">
+                1
+            </div>
+            <input name="recommend" id="recommend" type="range" value="3" step="1" min="1" max="5" />
+            <div class="recommendScale">
+                5
+            </div>
+          </div>
+        </div>
+
+        <!-- optGroup input -->
+        <div class="formRow mb-3">
+          <label class="mb-2">Would you like to subscribe to more content?</label>
+          <fieldset class="optGroup">
+             <input name="sSubscribe" id="fYes" value="yes" type="radio" checked/>
+             <label for="fYes">Yes</label>
+             <input name="sSubscribe" id="fNo" value="no" type="radio" />
+             <label for="fNo">No</label>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <textarea class="other form-control h-auto m-auto" name="type_feedback" maxlength="1000" rows="4" placeholder="Other feedback (optional)"></textarea>
+        </div>
+
+      </div>
+   
+      <div class="buttons my-4">
+        <input type="submit" value="Submit" />
+
+        <input type="reset" value="Cancel" />
+      </div>
+
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Teo Wan Yi Ashley, FED CA1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap links -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+          <!-- Bootstrap CSS -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+          <!-- Bootstrap Icons -->
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+          <!-- Javascripts   Bootstrap -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+          <link href="../css/reset.css" rel="stylesheet" />
+          <link href="../css/styles.css" rel="stylesheet" />
+          
+          <script src="../js/darkModeToggle.js" defer ></script>
+          <script src="../js/tooltips.js" defer></script>
+          <script src="../js/toTop.js" defer></script>
+      
+    <title>DIT/FT/1A/01 Teo Wan Yi, Ashley</title>
+</head>
+
+<body>
+    <!-- bootstrap navbar: https://getbootstrap.com/docs/5.0/components/navbar/ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- navbar logo -->
+          <div class="navbar-brand ps-3" href="#">
+            <!-- dark mode toggle: https://henryegloff.com/how-to-code-a-simple-dark-mode-toggle/ -->
+            <button 
+                class="light-mode-button" 
+                aria-label="Toggle Light Mode" 
+                onclick="toggle_light_mode()">
+                <span></span>
+                <span></span>
+
+            </button> 
+          </div>
+          <!-- navbar button when collapsed -->
+          <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav fs-5">
+              <a class="nav-link px-3" href="../index.html">About Me</a>
+              <a class="nav-link px-3" href="../html/sp.html">Singapore Polytechnic</a>
+              <a class="nav-link active px-3" aria-current="page" href="../html/career.html">Career</a>
+              <a class="nav-link px-3" href="../html/feedback.html">Feedback</a>
+            </div>
+          </div>
+    </nav>
+
+    <!-- Back To Top button. This div acts as the button -->
+    <div id="toTopButton" class="border border-dark d-flex btn btn-info position-fixed text-light" style="opacity: 1; visibility: visible; transition: opacity 200ms ease-in-out 0s;">
+
+      <!-- Resetting the font size using defaultFont class  -->
+      ^<span class="defaultFont"></span>
+    </div>
+
+    <header>Career</header>
+
+    <!-- accordian: https://getbootstrap.com/docs/5.0/components/accordion/ -->
+    <section>
+      <div class="stats row gx-0 col-12 gap-2 justify-content-center">
+
+        <!-- skillsfuture values: https://www.myskillsfuture.gov.sg/content/portal/en/assessment/results.html?AssessmentValue=SWV.775178 -->
+        <div class="values col-11 col-md-7 col-lg-3">
+          <h1>Values</h1>
+          <!-- rainbow span: https://stackoverflow.com/questions/39725592/loop-div-background-color-through-all-rainbow-colors-gradually-css -->
+          <div class="rgb mb-2"></div>
+          <div class="accordion" id="accordionPanelsStayOpen">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="values-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#values-collapseOne" aria-expanded="false" aria-controls="values-collapseOne">
+                  Lifestyle
+                </button>
+              </h2>
+              <div id="values-collapseOne" class="accordion-collapse collapse" aria-labelledby="values-headingOne">
+                <div class="accordion-body">
+                  The <strong>Lifestyle</strong> value means that the work tasks and work hours required in my job do not conflict with the time I want to spend with family and friends or engage in leisure activities.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="values-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#values-collapseTwo" aria-expanded="false" aria-controls="values-collapseTwo">
+                  Income
+                </button>
+              </h2>
+              <div id="values-collapseTwo" class="accordion-collapse collapse" aria-labelledby="values-headingTwo">
+                <div class="accordion-body">
+                  The <strong>Income</strong> value means that my job pays considerably more than what most people earn and allows me to have a high standard of living without any concern about finances.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="values-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#values-collapseThree" aria-expanded="false" aria-controls="values-collapseThree">
+                  Variety
+                </button>
+              </h2>
+              <div id="values-collapseThree" class="accordion-collapse collapse" aria-labelledby="values-headingThree">
+                <div class="accordion-body">
+                  Having <strong>Variety</strong> in a job means that work tasks are not routine and the job allows me to do many different things in a day's work.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="education col-11 col-md-4 col-lg-3">
+          <h1>Education</h1>
+          <div class="rgb mb-2"></div>
+          <div class="accordion" id="accordionPanelsStayOpen">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="education-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#education-collapseOne" aria-expanded="false" aria-controls="education-collapseOne">
+                  Secondary School
+                </button>
+              </h2>
+              <div id="education-collapseOne" class="accordion-collapse collapse" aria-labelledby="education-headingOne">
+                <div class="accordion-body">
+                  <div class="year fw-bold">2017-2020</div> Nan Chiau High School
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="education-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#education-collapseTwo" aria-expanded="false" aria-controls="education-collapseTwo">
+                  Junior College
+                </button>
+              </h2>
+              <div id="education-collapseTwo" class="accordion-collapse collapse" aria-labelledby="education-headingTwo">
+                <div class="accordion-body">
+                  <div class="year fw-bold">2021</div> Anglo-Chinese Junior College
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="education-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#education-collapseThree" aria-expanded="false" aria-controls="education-collapseThree">
+                  Polytechnic
+                </button>
+              </h2>
+              <div id="education-collapseThree" class="accordion-collapse collapse" aria-labelledby="education-headingThree">
+                <div class="accordion-body">
+                  <div class="year fw-bold">2022-2025</div> Singapore Polytechnic
+                </div>
+              </div>
+            </div>
+          
+          </div>
+
+        </div>
+    
+        <div class="certificates col-11 col-lg-5">
+          <h1>Certificates</h1>
+          <div class="rgb mb-2"></div>
+          <div class="accordion" id="accordionPanelsStayOpen">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="certificates-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#certificates-collapseOne" aria-expanded="false" aria-controls="certificates-collapseOne">
+                  'O' Level
+                </button>
+              </h2>
+              <div id="certificates-collapseOne" class="accordion-collapse collapse" aria-labelledby="certificates-headingOne">
+                <div class="accordion-body">
+                  <img src="../graphics/career/olevel.png" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+    
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="certificates-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#certificates-collapseTwo" aria-expanded="false" aria-controls="certificates-collapseTwo">
+                  'A' Level
+                </button>
+              </h2>
+              <div id="certificates-collapseTwo" class="accordion-collapse collapse" aria-labelledby="certificates-headingTwo">
+                <div class="accordion-body">
+                  <img src="../graphics/career/alevel.png" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+    
+          </div>
+          
+        </div>
+
+      </div>
+    </section>
+
+    <!-- timeline: https://mdbootstrap.com/docs/standard/extended/timeline/ -->
+    <section class="timeline container">
+        <ul class="timeline-with-icons mt-5 mx-5">
+        <li class="timeline-item mb-5 mx-5 ps-4">
+          <span class="timeline-icon d-flex">
+            <p class="fs-5">2020</p>
+          </span>
+    
+          <h5 class="fw-bold m-2">The Beginning</h5>
+          <p class="text-muted">
+            This was the year that I first started trying to pick up a bit of HTML. I tried using this free app called Mimo, as per my friend's recommendation since he had a coding background. It was a rather on-off commitment so I didn't get very far since it was my 'O' Level year. Not to mention, it was pretty simple and didn't really test manage to test my understanding of concepts.
+          </p>
+        </li>
+    
+        <li class="timeline-item mb-5 mx-5 ps-4">
+    
+          <span class="timeline-icon d-flex">
+            <p class="fs-5">2021</p>
+          </span>
+
+          <h5 class="fw-bold m-2">Tech Council</h5>
+          <p class="text-muted">
+            After my 'O' Levels, I enrolled into Anglo-Chinese Junior College (ACJC). A certain coding CCA, Tech Council, caught my eye. At first, I was apprehensive, however, I still wanted to give it a shot. The seniors and teacher were friendly, and I felt that this was a good opportunity for me to actually learn something. After engaging in C++ and learning about the fundamentals of computational thinking, it turned out that my interests was inclined towards coding and I looked forward to the next session everyday. At the end of the year, I decided to make the switch from JC to Polytechnic.
+          </p>
+        </li>
+    
+        <li class="timeline-item mb-5 mx-5 ps-4">
+    
+          <span class="timeline-icon d-flex">
+            <p class="fs-5">2022</p>
+          </span>
+
+          <h5 class="fw-bold m-2">Now</h5>
+          <p class="text-muted">
+            It became undeniable that programming was definitely something I wanted to pursue. I don't have a niche yet so I decided to turn to a more general I.T. course. When the admissions exercise came again, I applied for Singapore Polytechnic's Diploma in Information Technology - S69. Now, I am doing my best to learn as much as I can, especially when it comes to Software Development, my desired specialisation for this course.
+          </p>
+        </li>
+        </div>
+    
+      </ul>
+    
+    </section>
+
+    <!-- career cards -->
+    <section>
+
+      <h1>Career Options</h1>
+
+      <div class="career row gx-0 m-sm-0 m-md-2 m-lg-4 text-black">
+        
+          <div class="card col-md-12 col-lg-4 rounded-3">
+  
+              <figure class="cardIcon mt-4">
+                  <img src="../graphics/career/application-engineering-icon.png" alt="" />
+                      <!-- https://www.flaticon.com/free-icon/application_2833637 -->
+              </figure>
+  
+              <div class="card-body">
+                  <h5 class="card-title">Application Engineering</h5>
+                      <!-- https://sp-lap.collegesparc.com/educational_strategy/studentHome.html#/career/U2FsdGVkX19YbXSStNHKFVZzPDEzUzVB9jSxpx2zkm6Md9IOM3qaGhuA0xISI8Nl/16/26820/undefined -->
+                  <div class="card-text">Application Engineering involves the design, and implementation of software applications.</div>
+                  <br>
+                  <figure class="annualWages">
+                      <figcaption>Annual Wages:</figcaption>
+                      <img src="../graphics/career/application-engineering-wages.png" alt="$58146" />
+                  </figure>
+                  <br>
+                  <figure class="trend">
+                      <figcaption>Employment Trend:</figcaption>
+                      <img src="../graphics/career/growing-icon.png" alt="growing-icon" />
+                  </figure>
+              </div>
+  
+          </div>
+  
+          <div class="card col-md-12 col-lg-4 rounded-3">
+  
+              <figure class="cardIcon mt-4">
+                  <img src="../graphics/career/mobile-app-development-icon.png" alt="" />
+                      <!-- https://icon-library.com/icon/mobile-app-development-icon-19.html -->
+              </figure>
+  
+              <div class="card-body">
+                  <h5 class="card-title">Mobile App Development</h5>
+                      <!-- https://sp-lap.collegesparc.com/educational_strategy/studentHome.html#/career/U2FsdGVkX18laucmaukHbrASI6i4nsGDeb0jzDkilW3UWmsJihTVmHPaC1NmXNRh/16/26820/undefined -->
+                  <div class="card-text">Mobile Application Development involves the design, implementation and user testing of applications on mobile devices such as mobile phones, tablets or other handheld devices.</div>
+                  <figure class="annualWages">
+                      <figcaption>Annual Wages:</figcaption>
+                      <img src="../graphics/career/mobile-app-development-wages.png" alt="$57474" />
+                  </figure>
+                  <br>
+                  <figure class="trend">
+                      <figcaption>Employment Trend:</figcaption>
+                      <img src="../graphics/career/growing-icon.png" alt="growing-icon" />
+                  </figure>
+              </div>
+  
+          </div>
+  
+          <div class="card col-md-12 col-lg-4 rounded-3">
+  
+              <figure class="cardIcon mt-4">
+                  <img src="../graphics/career/web-development-icon.png" alt="" />
+                      <!-- https://www.flaticon.com/free-icon/browser_921539?related_id=921539&origin=pack -->
+              </figure>
+  
+              <div class="card-body">
+                  <h5 class="card-title">Web Development</h5>
+                      <!-- https://sp-lap.collegesparc.com/educational_strategy/studentHome.html#/career/U2FsdGVkX19lGO5IgGcW0dNwU3lk6OXewTeNLSm7aFs=/16/26820/undefined -->
+                  <div class="card-text">Web Development involves the design, creation and maintenance of Websites and Web-based applications or services.</div>
+                  <br>
+                  <figure class="annualWages">
+                      <figcaption>Annual Wages:</figcaption>
+                      <img src="../graphics/career/web-development-wages.png" alt="$53004" />
+                  </figure>
+                  <br>
+                  <figure class="trend">
+                      <figcaption>Employment Trend:</figcaption>
+                      <img src="../graphics/career/growing-icon.png" alt="growing-icon" />
+                  </figure>
+              </div>
+
+          </div>
+
+      </div>
+
+    </section>
+
+</body>
+
+</html>

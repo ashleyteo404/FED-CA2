@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Teo Wan Yi Ashley, FED CA1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap links -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+          <!-- Bootstrap CSS -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+          <!-- Bootstrap Icons -->
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+          <!-- Javascripts Bootstrap -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
+    
+    <script src="./js/darkModeToggle.js" defer ></script>
+    <script src="./js/tooltips.js" defer></script>
+    <script src="./js/toTop.js" defer></script>
+      
+    <title>DIT/FT/1A/01 Teo Wan Yi, Ashley</title>
+</head>
+
+<body>
+    <!-- bootstrap navbar: https://getbootstrap.com/docs/5.0/components/navbar/ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- navbar logo -->
+          <div class="navbar-brand ps-3" href="#">
+            <!-- dark mode toggle: https://henryegloff.com/how-to-code-a-simple-dark-mode-toggle/ -->
+            <!-- tooltip: https://getbootstrap.com/docs/5.0/components/tooltips/ -->
+            <!-- make tooltips fade out even in dark mode: https://community.qualtrics.com/XMcommunity/discussion/16755/making-tooltips-disappear-again -->
+            <button 
+                class="light-mode-button" 
+                aria-label="Toggle Light Mode" 
+                onclick="toggle_light_mode(), titlePageFontColor()"
+                    data-bs-toggle="tooltip" 
+                    data-bs-placement="bottom" 
+                    title="Use this button to toggle between light and dark mode.">
+                <span></span>
+                <span></span>
+
+            <!-- extra: https://codepen.io/bheberer/pen/BaNZKmq -->
+            <!-- <div class="toggle-slot">
+                <div class='sun-icon-wrapper'>
+                    <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+                </div>
+                <div class='toggle-button'></div>
+                <div class='moon-icon-wrapper'>
+                    <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+                </div>
+            </div> -->
+
+            </button> 
+          </div>
+          <!-- navbar button when collapsed -->
+          <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav fs-5">
+              <a class="nav-link active px-3" aria-current="page" href="./html/index.html">About Me</a>
+              <a class="nav-link px-3" href="./html/sp.html">Singapore Polytechnic</a>
+              <a class="nav-link px-3" href="./html/career.html">Career</a>
+              <a class="nav-link px-3" href="./html/feedback.html">Feedback</a>
+            </div>
+          </div>
+    </nav>
+
+    <!-- Back To Top button. This div acts as the button -->
+    <div id="toTopButton" class="border border-dark d-flex btn btn-info position-fixed text-light" style="opacity: 1; visibility: visible; transition: opacity 200ms ease-in-out 0s;">
+
+        <!-- Resetting the font size using defaultFont class  -->
+        ^<span class="defaultFont"></span>
+    </div>
+
+    <!-- title page -->
+    <div class="titlePage row align-items-center gx-0 mt-4 mb-4">
+        <div class="row align-items-center">
+
+            <div class="d-flex col-sm-12 text-center justify-content-center">
+
+                <!-- Title Text. Monospace used for better-looking animation. -->
+                <!-- Text-break used to prevent the title from overflowing into x-axis, especially in smaller viewports -->
+                <p class="mainTitle display-1 text-break text-monospace ps-4">
+                    <span>_</span><span>_</span><span>_</span><span>_</span><span>_</span><span>_</span><span>_</span><span>_</span><span>_</span><span>_</span><span>_</span><span>_</span><span>_</span><span>_</span><span>_</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <figure class="pfp">
+        <img src="./graphics/index/pfp.jpg" class="img-fluid p-1" alt="profile picture" />
+    </figure>
+
+    <header>About Me</header>
+
+    <p>According to the&nbsp;
+        <!-- tooltips: https://getbootstrap.com/docs/5.0/components/tooltips/ -->
+        <button type="button" class="border-0 bg-transparent" data-bs-toggle="bootstrapTooltip" data-bs-html="true" title="Fun Fact: 16personalities is special as it types you by type!">
+            <a href="https://www.16personalities.com/free-personality-test" id="personalityTest link-primary text-decoration-underline " >16 personalities test</a>
+        </button>
+    , I'm an ENFP.</p>
+
+    <!-- bootstrap carousel: https://getbootstrap.com/docs/5.1/components/carousel/#with-indicators -->
+    <section>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <h1 class="fw-bold">Welcome to my website :D</h1>
+                    <p class="personality">Before I explain what it means to be an ENFP according to 16personalities, let me first introduce you to 16personalities. So, the 16 personalities test is based off the Myers-Briggs Theory that everyone can be classified into 16 personality types, which, as you can imagine, isn't the most accurate. However, it does still count for something! Unfortunately, the 16personalities website is known for being inaccurate in typing people as unlike other personality tests based off this theory, it types you by type (as in the individual letter) instead of by function (in simple terms, how the letters interact with each other to form your cognitive functions). Despite this, I chose to use the 16personalities test as it can be a good starting point for understanding typology in a way that the general public can consume given that it is typing by type instead of function is more well-known and simpler.<br /><br />Click on the arrows to see the individual types!<br /><br />Disclaimer: I am not a professional.</p>
+                </div>
+
+                <div class="carousel-item">
+                    <h1 class="fw-bold">E - Extraverted</h1>
+                    <p class="personality">"Extraverts are interested in engaging with their environment, and they feed off the responses of the people and events around them. They enjoy pushing limits and seeing what the world can do." ~ 16personalities<br /><br />
+                        <!-- https://www.16personalities.com/articles/mind-introverted-vs-extraverted#:~:text=Extravert%20(E)%20Personality&text=Extraverts%20are%20interested%20in%20engaging,what%20the%20world%20can%20do. -->
+                    It's true. I find that my energy tends to have a lot of input and output. In other words, majority of the time, I will express my energy. I wear my heart on my sleeve! Actually...I was advised to never gamble or play in a casino because my lack of a poker face would cause me to lose all my money. However, I don't regret being extraverted in the slightest! I believe in living my life out to the fullest, if that wasn't obvious enough from my motto below. Pretty cool animation, right? Thanks, I suffered for it :D Back to the point on energy, I tend to subconsciously synergise my energy with those around me, unless I'm exhausted. That's why who I choose to surround myself with is an important choice as they will inevitably influence my energy.
+                    </p>
+                </div>
+
+                <div class="carousel-item">
+                    <h1 class="fw-bold">N - Intuitive</h1>
+                    <p class="personality">"88% of those with the Intuitive trait say they spend a lot of time thinking about “What if?” scenarios, compared to 63% of those with the Observant trait." ~ 16personalities<br /><br />
+                        <!-- https://www.16personalities.com/articles/energy-intuitive-vs-observant#:~:text=Intuitive%20(N)%20Personality&text=People%20with%20the%20Intuitive%20trait,like%20any%20other%20personality%20type. -->
+                    As an intuitive, I had a bad habit of living in my head when I was younger. It took many years of practice and focus to remember that as real as it may feel, ultimately, it is only in my mind. It's important for me to not get caught up in such intense thoughts and ground myself. To live in the here and now may be a blessing and/or a curse, but it is definitely an experience. And, what is the point of going through life without actually experiencing it? Worrying about "What if?"s won't get me anywhere. The only way to move forward is to confront life. However, everyone should still dream from time to time. Sometimes, fantasising about "What if" might just be the very thing that revitalises us!
+                    </p>
+                </div>
+
+                <div class="carousel-item">
+                    <h1 class="fw-bold">F - Feeling</h1>
+                    <p class="personality">"People with the Feeling (F) trait follow their hearts and emotions – sometimes without even realizing it. They may show it to different degrees and in different ways, but however they do it, Feeling personality types tend to be caring, compassionate, and warm." ~ 16personalities<br /><br />
+                        <!-- https://www.16personalities.com/articles/nature-thinking-vs-feeling#:~:text=People%20with%20the%20Feeling%20(F,caring%2C%20compassionate%2C%20and%20warm. -->
+                    My motto below this is already a telltale sign. For those who know me, it goes without saying, I value being true to myself. I'm not the best person. All I seem to do is stumble and fumble. I bumble and grumble. But, I'm not even humble. Yet, I do my best. As cliche as it may sound, I do believe in staying true to myself. Although I may falter in my beliefs and morals, at the end of the day, I know I will find myself back on the right track to become someone that I can accept. No matter what, I strive to be sincere and genuine as can be, in helping myself and in helping others. 
+                    </p>
+                </div>
+
+                <div class="carousel-item">
+                    <h1 class="fw-bold">P - Prospecting</h1>
+                    <p class="personality">"Prospecting (P) individuals are much more flexible when it comes to dealing with unexpected challenges. This flexibility helps them seize unexpected opportunities as well...People with this trait hold that life is full of possibilities." ~ 16personalities<br /><br />
+                        <!-- https://www.16personalities.com/articles/tactics-judging-vs-prospecting -->
+                    Basically, an oppotunist. However, if life gave me lemons, I probably would not make lemonade. On the bright side, I can improvise well and go with the flow easily in times of need. I see all that life has to offer, and I go for it. Doors are always open, you just have to be good at hide-and-seek. But, on the not so bright side, I am a procrastinator. I'm indecisive because I want to construct the best possible outcome. As such, I end up not focusing on a single project and complete nothing apart from daydreaming about completing said project. As life will have it, I am not perfect. Therefore, I must go through the torturous turmoil of learning to let go and simply shooting my shot.
+                    </p>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="index-carousel-arrow carousel-control-prev-icon bg-success opacity-75 rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="index-carousel-arrow carousel-control-next-icon bg-success opacity-75 rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+
+        <!-- bootstrap cards: https://getbootstrap.com/docs/4.0/components/card/ -->
+        <!-- circular progress bar animation: https://codepen.io/bumuoi/pen/yLvevQz -->
+        <div class="cards d-flex flex-column flex-md-row flex-md-wrap m-4 p-5">
+            <button type="button" 
+              data-bs-target="#carouselExampleFade" 
+              data-bs-slide-to="0" 
+              class="active btn btn-lg col-md-6 col-lg-3 p-1" 
+              aria-current="true" 
+              aria-label="Slide 1">
+    
+                <div class="card rounded-3 bg-info">
+                    <div class="card-body">
+                    <h5 class="card-title">Mind</h5>
+
+                        <div class="circular-progress">
+                            <div class="box">
+                            <p class="number">
+                                <span class="num">59</span>
+                                <span class="sub">%</span>
+                            </p>
+                            <p class="title">Extraverted</p>
+                            </div>
+                            <span class="dots"></span>
+                            <svg class="svg">
+                            <defs>
+                                <linearGradient id="rgb">
+                                    <stop offset="0%" stop-color="#565656" />
+                                    <stop offset="100%" stop-color="#b7b5b5" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="circle" cx="90" cy="90" r="80" />
+                            </svg>
+                        </div>
+
+                        <p class="card-text">Click on this card for more information!</p>
+
+                    </div>
+                </div>
+    
+            </button>
+    
+            <button type="button" 
+              data-bs-target="#carouselExampleFade" 
+              data-bs-slide-to="1" 
+              class="btn btn-lg col-md-6 col-lg-3 p-1" 
+              aria-label="Slide 2">
+              
+                <div class="card rounded-3 bg-warning">
+                    <div class="card-body">
+                    <h5 class="card-title">Energy</h5>
+
+                        <div class="circular-progress">
+                            <div class="box">
+                            <p class="number">
+                                <span class="num">69</span>
+                                <span class="sub">%</span>
+                            </p>
+                            <p class="title">Intuitive</p>
+                            </div>
+                            <span class="dots"></span>
+                            <svg class="svg">
+                            <defs>
+                                <linearGradient id="gradientStyle">
+                                <stop offset="0%" stop-color="#565656" />
+                                <stop offset="100%" stop-color="#b7b5b5" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="circle" cx="90" cy="90" r="80" />
+                            </svg>
+                        </div>
+                        
+                        <p class="card-text">Click on this card for more information!</p>
+                        
+                    </div>
+                </div>
+    
+            </button>
+    
+            <button type="button"
+              data-bs-target="#carouselExampleFade" 
+              data-bs-slide-to="2" 
+              class="btn btn-lg col-md-6 col-lg-3 p-1" 
+              aria-label="Slide 3">
+    
+                <div class="card rounded-3 bg-success">
+                    <div class="card-body">
+                    <h5 class="card-title">Nature</h5>
+
+                        <div class="circular-progress">
+                            <div class="box">
+                            <p class="number">
+                                <span class="num">56</span>
+                                <span class="sub">%</span>
+                            </p>
+                            <p class="title">Feeling</p>
+                            </div>
+                            <span class="dots"></span>
+                            <svg class="svg">
+                            <defs>
+                                <linearGradient id="gradientStyle">
+                                <stop offset="0%" stop-color="#565656" />
+                                <stop offset="100%" stop-color="#b7b5b5" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="circle" cx="90" cy="90" r="80" />
+                            </svg>
+                        </div>
+                        
+                        <p class="card-text">Click on this card for more information!</p>
+                                        
+                    </div>
+                </div>
+    
+            </button>
+    
+            <button type="button" 
+              data-bs-target="#carouselExampleFade" 
+              data-bs-slide-to="3" 
+              class="btn btn-lg col-md-6 col-lg-3 p-1" 
+              aria-label="Slide 4">
+    
+                <div class="card rounded-3 bg-danger">
+                    <div class="card-body">
+                    <h5 class="card-title">Tactics</h5>
+
+                        <div class="circular-progress">
+                            <div class="box">
+                            <p class="number">
+                                <span class="num">60</span>
+                                <span class="sub">%</span>
+                            </p>
+                            <p class="title">Prospecting</p>
+                            </div>
+                            <span class="dots"></span>
+                            <svg class="svg">
+                            <defs>
+                                <linearGradient id="gradientStyle">
+                                    <stop offset="0%" stop-color="#565656" />
+                                    <stop offset="100%" stop-color="#b7b5b5" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="circle" cx="90" cy="90" r="80" />
+                            </svg>
+                        </div>
+
+                        <p class="card-text">Click on this card for more information!</p>
+                    
+                    </div>
+                </div>
+    
+            </button>
+    
+        </div>
+        
+    </section>
+
+    <!-- <div class="rgb mb-2"></div> -->
+
+    <!-- motto -->
+    <section>
+        <div class="bg position-relative">
+            <div class="current-time text-end text-white pe-4">
+                <h2 id="timeHeading">Current Time</h2>
+                
+                <div id="dateNow"><br /></div> 
+            </div>
+
+            <span class="motto display-1 text-white text-bottom fw-bold"></span>
+        </div>
+    </section>
+
+    <!-- <div class="rgb mb-2"></div> -->
+
+    <!-- interests -->
+    <section>
+
+        <div class="interests row m-sm-1 m-md-2 m-lg-4 text-black">
+
+            <div class="card col-sm-12 col-md-4 rounded-3 py-4">
+                <figure class="cardIcon">        
+                    <img src="./graphics/index/coding-icon.png" alt="" />
+                        <!-- https://www.pngkey.com/detail/u2q8a9a9a9i1q8r5_code-icon-png-free-coding-for-kids/ -->
+                </figure>
+                <h5 class="card-title">Coding</h5>
+                <p class="mb-4">Coding is simply solving logic puzzles, occasionally with Applied Mathematics.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                    Learn more
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Coding</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <blockquote>I love and hate coding.</blockquote>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="card col-sm-12 col-md-4 rounded-3 py-4">
+                <figure class="cardIcon">        
+                    <img src="./graphics/index/krav-maga-icon.png" alt="" />
+                        <!-- https://www.pngkey.com/detail/u2q8a9a9a9i1q8r5_code-icon-png-free-coding-for-kids/ -->
+                </figure>
+                <h5 class="card-title">Krav Maga</h5>
+                <p class="mb-4">Krav Maga is a military self-defense and fighting system developed for the Israel Defense Forces and Israeli security forces.</p>
+                    <!-- https://en.wikipedia.org/wiki/Krav_Maga -->
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                    Learn more
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Service</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        I love sparring.<br />
+                        <a type="button" href="" class="btn btn-primary mt-2">Watch Seniors Spar</a>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            
+            <div class="card col-sm-12 col-md-4 rounded-3 py-4">
+                <figure class="cardIcon">        
+                    <img src="./graphics/index/service-icon.png" alt="" />
+                        <!-- https://www.pngkey.com/detail/u2q8a9a9a9i1q8r5_code-icon-png-free-coding-for-kids/ -->
+                </figure>
+                <h5 class="card-title">Service</h5>
+                <p class="mb-4">Being able to help others and give back to the community makes me happy.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                    Learn more
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Service</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        俗话说：“助人为快乐之本”。<br />Definition: Helping others will make one happy.
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+    </section>
+
+    <script src="./js/letterRandomise.js" ></script> 
+    <script src="./js/rainbowify.js" ></script>
+    <script src="./js/bootstrapTooltips.js" ></script>
+    <script src="./js/circularProgress.js" ></script>
+    <script src="./js/clock.js" ></script>
+    <script src="./js/swapLang.js" ></script>
+    <script src="./js/videoModal.js" ></script>
+
+
+
+</body>
+
+</html>
